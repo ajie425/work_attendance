@@ -12,7 +12,7 @@ public class SessionInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object o) throws Exception {
         String uri = request.getRequestURI();
-        if ((uri.indexOf("login")>=0)||(uri.indexOf("sign")>=0)){
+        if ((uri.indexOf("login")>=0)||(uri.indexOf("sign")>=0)||(uri.indexOf("error")>=0)||(uri.indexOf("reAttend")>=0)){
             return true;
         }
         HttpSession session = request.getSession();

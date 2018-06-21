@@ -2,19 +2,42 @@ package com.coder520.attend.vo;
 
 import com.coder520.common.page.PageQueryBean;
 
-public class QueryCondition extends PageQueryBean{
+/**
+ * Created by JackWangon[www.aiprogram.top] 2017/6/22.
+ */
+public class QueryCondition  extends PageQueryBean{
 
-    private long userId;
+    private Long userId;
 
-    private String startDate;
+    private String startDate ;
 
-    private String endDate;
+    private String endDate ;
 
-    public long getUserId() {
+    private String rangeDate;
+
+    private Byte attendStatus;
+
+    public Byte getAttendStatus() {
+        return attendStatus;
+    }
+
+    public void setAttendStatus(Byte attendStatus) {
+        this.attendStatus = attendStatus;
+    }
+
+    public String getRangeDate() {
+        return rangeDate;
+    }
+
+    public void setRangeDate(String rangeDate) {
+        this.rangeDate = rangeDate;
+    }
+
+    public Long getUserId() {
         return userId;
     }
 
-    public void setUserId(long userId) {
+    public void setUserId(Long userId) {
         this.userId = userId;
     }
 

@@ -9,4 +9,6 @@ public interface AttendService {
     void signAttend(Attend attend) throws Exception;
 
     PageQueryBean listAttend(QueryCondition condition);
+
+    void checkAttend();
 }
